@@ -33,7 +33,7 @@ Access http://docker-ip URL from your browser to see if it work
 2. Create new environment which has `url` key with the value: `http://docker-ip`
 3. Exec each pre-defined requests to see result
 
-
+## If table not created, follow the below procedure
 
 
 1. Build app `mvn clean package`
