@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * Rest request controller
- * Created by Qpair Developer  on 01/25/17.
+ * Created by Qpair Developer on 01/25/17.
  */
 @Controller
 @RequestMapping("/rest")
@@ -33,7 +33,7 @@ public class RestController {
         return restMeasureRepository.findAll();
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{ids}", method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<RestMeasure> getItem(@PathVariable Long id) {
         log.debug("Get RestMeasure by id: {}", id);
