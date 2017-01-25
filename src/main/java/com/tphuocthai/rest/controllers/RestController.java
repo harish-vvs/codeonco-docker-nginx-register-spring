@@ -33,7 +33,7 @@ public class RestController {
         return restMeasureRepository.findAll();
     }
 
-    @RequestMapping(value = "/{ids}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<RestMeasure> getItem(@PathVariable Long id) {
         log.debug("Get RestMeasure by id: {}", id);
