@@ -5,6 +5,8 @@ stage('deploy_to_dev_environment'){
             sh 'pwd'
             git credentialsId: '64785bd4-d94b-4b8c-bc99-46e2375ae5ca', url: 'https://github.com/harish-vvs/codeonco-docker-nginx-register-spring'
         }
+    }
+    node('master'){
         dir('/Users/qpairdeveloper/Documents/vagrant/ci_cd_pipeline'){
             sh 'vagrant scp codeonco-docker-nginx-register-spring/ staging:/vagrant'
         }
