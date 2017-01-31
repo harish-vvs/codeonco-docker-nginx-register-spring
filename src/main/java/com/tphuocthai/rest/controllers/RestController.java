@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * Rest request controller
- * Created by Qpair Developer on 01/25/17.
+ * Created by tphuocthai on 7/9/16.
  */
 @Controller
 @RequestMapping("/rest")
@@ -44,22 +44,23 @@ public class RestController {
         return new ResponseEntity<RestMeasure>(restMeasure, HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     @ResponseBody
     public RestMeasure createRestMeasure(@RequestBody RestMeasure restMeasure) {
         log.debug("Create RestMeasure: {}", restMeasure);
-        long currentTime = new Date().getTime();
+        
+        /*long currentTime = new Date().getTime();
 
         restMeasure.setTimeInMilliseconds(currentTime);
         restMeasure.setCreatedBy(1);
         restMeasure.setCreatedAt(currentTime);
         restMeasure.setLastUpdatedBy(1);
-        restMeasure.setLastUpdatedAt(currentTime);
+        restMeasure.setLastUpdatedAt(currentTime);*/
 
         return restMeasureRepository.save(restMeasure);
     }
 
-    @RequestMapping(value = "/{id}", method = {RequestMethod.PUT, RequestMethod.PATCH})
+    /*@RequestMapping(value = "/{id}", method = {RequestMethod.PUT, RequestMethod.PATCH})
     @ResponseBody
     public ResponseEntity<RestMeasure> updateRestMeasure(@PathVariable("id") Long id, @RequestBody RestMeasure updateValues) {
         log.debug("Update RestMeasure id: {}", id);
@@ -75,9 +76,9 @@ public class RestController {
         restMeasure.setLastUpdatedAt(new Date().getTime());
 
         return new ResponseEntity<RestMeasure>(restMeasureRepository.save(restMeasure), HttpStatus.OK);
-    }
+    }*/
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    /*@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
     public ResponseEntity<RestMeasure> deleteItem(@PathVariable Long id) {
         log.debug("Delete RestMeasure by id: {}", id);
@@ -88,5 +89,5 @@ public class RestController {
         }
         restMeasureRepository.delete(id);
         return new ResponseEntity<RestMeasure>(measure, HttpStatus.OK);
-    }
+    }*/
 }

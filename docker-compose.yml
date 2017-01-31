@@ -39,6 +39,8 @@ services:
     command: "-server -bootstrap"
 
   registrator:
+    environment:
+      COMPOSE_CONVERT_WINDOWS_PATHS: "${COMPOSE_CONVERT_WINDOWS_PATHS}"
     image: gliderlabs/registrator
     volumes:
       - "/var/run/docker.sock:/tmp/docker.sock"

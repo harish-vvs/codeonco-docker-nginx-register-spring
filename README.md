@@ -1,11 +1,11 @@
 # spring-rest-docker
 
-This demo for building maven CRUD app and deploy using docker.
+This demo for building maven CRUD app and deploy using docker, just showcase a simple REST API on POST register details, and retrieve data with GET.
 
 ## Here are step to run this:
 
 1. Install docker. Following [this guide](https://docs.docker.com/engine/installation/)
-2. Build app as war using `mvn clean package`
+2. Build app as war using `mvn clean package`. NOTE: If any changes are made to the code, run `docker-compose build` after `mvn clean package` to rebuild image.
 3. Run app using `docker-compose up`
 
 ## Docker compose creates 5 services:
@@ -16,31 +16,14 @@ This demo for building maven CRUD app and deploy using docker.
 4. Consul server
 5. Registrator
 
-## Scaling app
-
-```
-docker-compose scale restapp=3
-```
-
-This will create 2 more tomcat container and automatically propagated to nginx load it's configuration (consul-template doing this)
-
 ## Testing
 Access http://docker-ip URL from your browser to see if it work
+
+## Unit test through command line
+Run `mvn clean test` through command line. NOTE: `mvn clean install` both repackage war file and run test at the same time
 
 ## REST API testing
 
 1. Import `spring-rest-docker.postman.json` to your postman collection
 2. Create new environment which has `url` key with the value: `http://docker-ip`
 3. Exec each pre-defined requests to see result
-
-## If table not created in rest_measure DB, follow the below procedure
-
-
-1. Build app `mvn clean package`
-2. Build and run docker containers: `docker-compose up -d`
-3. Stop and restart restapp container: `sudo docker-compose stop restapp && sudo docker-compose start restapp`
-
-
-
-
-

@@ -24,6 +24,8 @@ RUN rm /tmp/consul-template_0.15.0_linux_amd64.zip &&\
 ADD templates /templates
 ADD docker-entrypoint.sh /docker-entrypoint.sh
 
+RUN chmod +x /docker-entrypoint.sh
+
 CMD ["/docker-entrypoint.sh"]
 
 EXPOSE 80

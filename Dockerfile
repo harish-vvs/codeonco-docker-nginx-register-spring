@@ -1,5 +1,5 @@
 FROM tomcat:8.5
-MAINTAINER QPAIR <qpair@gmail.com>
+MAINTAINER Trinh Phuoc Thai <tphuocthai@gmail.com>
 
 # Remove tomcat default root app and copy our rest app deploy as ROOT
 RUN ["rm", "-rf", "/usr/local/tomcat/webapps/ROOT"]
