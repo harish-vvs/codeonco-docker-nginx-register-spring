@@ -19,8 +19,8 @@
     <h2>REST APIs:</h2>
     <ul>
         <li><code>GET /rest</code> Get all RestMeasure records from DB</li>
-        <li><code>GET /rest/{id}</code> Get RestMeasure records from DB based on ID</li>
-        <li><code>POST /rest</code> Create a RestMeasure record with given <code>serviceName</code>, <code>userName</code> parameter</li>
+        <li><code>GET /rest/{{id}}</code> Get RestMeasure records from DB based on {{id}}</li>
+        <li><code>POST /rest/register</code> Create a RestMeasure record with given <code>serviceName</code>, <code>userName</code> parameter</li>
     </ul>
 </body>
 </html>

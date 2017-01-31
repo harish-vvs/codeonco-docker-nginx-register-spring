@@ -33,7 +33,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1468135714232,
-			"name": "Get all order",
+			"name": "Get all register REST",
 			"description": "",
 			"collectionId": "88210fd3-b9c5-a271-e6e7-77ab992ef4aa",
 			"rawModeData": "{\n    \"serviceName\": \"Tracker\",\n   \"userName\": \"jin\"\n}"
@@ -52,7 +52,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1468135818342,
-			"name": "Create order 4",
+			"name": "Register order 4",
 			"description": "",
 			"collectionId": "88210fd3-b9c5-a271-e6e7-77ab992ef4aa",
 			"rawModeData": "{\n    \"serviceName\": \"Tracker\",\n   \"userName\": \"jin\"\n}"
@@ -71,7 +71,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1468160936630,
-			"name": "Get order with ID 1",
+			"name": "Get register with ID 1",
 			"description": "",
 			"collectionId": "88210fd3-b9c5-a271-e6e7-77ab992ef4aa",
 			"rawModeData": "{\n    \"serviceName\": \"Tracker\",\n   \"userName\": \"jin\"\n}"
@@ -90,7 +90,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1468135800832,
-			"name": "Create order 1",
+			"name": "Register order 1",
 			"description": "",
 			"collectionId": "88210fd3-b9c5-a271-e6e7-77ab992ef4aa",
 			"rawModeData": "{\n    \"serviceName\": \"Food\",\n   \"userName\": \"yujin\"\n}"
@@ -109,7 +109,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1468135857183,
-			"name": "Create order 3",
+			"name": "Register order 3",
 			"description": "",
 			"collectionId": "88210fd3-b9c5-a271-e6e7-77ab992ef4aa",
 			"rawModeData": "{\n    \"serviceName\": \"Design\",\n   \"userName\": \"kok\"\n}"
@@ -128,7 +128,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1468135818342,
-			"name": "Create order 2",
+			"name": "Register order 2",
 			"description": "",
 			"collectionId": "88210fd3-b9c5-a271-e6e7-77ab992ef4aa",
 			"rawModeData": "{\n    \"serviceName\": \"Development\",\n   \"userName\": \"QPAIR\"\n}"
